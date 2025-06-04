@@ -6,4 +6,32 @@
 
 body {
   background-color: black;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #15e6e6;
+  border-bottom: 3px solid #15e6e6;
+}
+
+.nav {
+  padding: 2rem 2rem;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  flex-wrap: wrap;
 }
