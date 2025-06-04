@@ -1,0 +1,35 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+.project-block {
+  background-color: #1a1a1a;
+  border: 1px solid #15e6e6;
+  border-radius: 12px;
+  padding: 2rem;
+  width: calc(50% - 2rem);
+  min-height: 200px;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-block:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #15e6e6;
+}
+
+.project-block h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #15e6e6;
+}
+
+.project-block p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
