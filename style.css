@@ -58,6 +58,9 @@ a.active {
 
 .logo {
   font-weight: 500;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .studio {
@@ -90,4 +93,35 @@ a.active {
   padding: 1rem;
   font-size: 1.2rem;
   background-color: #111;
+}
+
+.center-home {
+  justify-content: center; /* vertically center in page-content */
+  align-items: center; /* horizontally center content */
+  text-align: center;
+}
+
+.mainLogo {
+  display: flex;
+  justify-content: center;
+  font-size: 7rem;
+  justify-self: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* GLOW */
+.mainLogo:hover {
+  animation: glow 1s ease-in-out infinite alternate;
+  color: #15e6e6;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #15e6e6, 0 0 10px #15e6e6;
+  }
+  to {
+    text-shadow: 0 0 15px #15e6e6, 0 0 30px #15e6e6;
+  }
 }
